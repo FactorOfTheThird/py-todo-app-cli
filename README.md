@@ -4,7 +4,7 @@ It's purpose was to quickly get my hands dirty with python as I explore more int
 
 ## Usage
 
-Simply clone the `main.py` file and run it in a terminal.
+Simply clone the repo and run `main.py` in a terminal.
 
 The following commands are available:
 
@@ -20,7 +20,7 @@ The following commands are available:
 
 ## Adding commands and functionality
 
-At the moment, commands are stored in the `App` class:
+At the moment, commands are stored in the `App` class as a dictionary:
 
 ```py
 self.commands = {
@@ -37,3 +37,18 @@ self.commands = {
 ```
 
 To add a new command, simply add a new entry in the dictionary where the key is the command and the value is the function that will be executed when running the command.
+
+## Notes
+
+It was a nice project to get me started. Honestly it deserves a proper re-write at some point down the line.
+
+### Known limitations
+- No data persistence between sessions without manual save/load
+- No task editing functionality
+- Some extra error handling
+
+### Future improvements
+- Auto-save on exit
+- Task priority levels
+- Due dates and reminders
+- Better input validation
