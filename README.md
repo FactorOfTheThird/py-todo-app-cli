@@ -16,7 +16,7 @@ The following commands are available:
 | add | Prompts the user for a title and description of the new task. |
 | rem | Removes the task by it's ID |
 | load | Loads tasks from a JSON file (needs to be in the same directory). |
-| save | Saves all tasks currently in the app to an adjacent JSON file |
+| save | Saves all tasks currently in the app to an adjacent JSON file. |
 
 ## Adding commands and functionality
 
