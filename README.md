@@ -17,3 +17,23 @@ The following commands are available:
 | rem | Removes the task by it's ID |
 | load | Loads tasks from a JSON file (needs to be in the same directory). |
 | save | Saves all tasks currently in the app to an adjacent JSON file |
+
+## Adding commands and functionality
+
+At the moment, commands are stored in the `App` class:
+
+```py
+self.commands = {
+    "h": self.help,
+    "q": self.quit,
+
+    "add": self.addTask,
+    "list": self.listTasks,
+    "rem": self.removeTask,
+
+    "save": self.saveTasks,
+    "load": self.importTasks
+}
+```
+
+To add a new command, simply add a new entry in the dictionary where the key is the command and the value is the function that will be executed when running the command.
